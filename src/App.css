@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root{
+    --primary: #fff;
+    --seco: #D2D2D2;
+    --accent: #F57E57;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+.form{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--primary);
+    width: 30vw;
+    min-height: 50vh;
 }
 
-.App-link {
-  color: #61dafb;
+.login-form{
+    min-height: 30vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputBox{
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.inputBox input{
+    flex: 1;
+    padding: 7px;
+    background-color: transparent;
+    align-items: center;
+    border: 0;
+    outline: 0;
+}
+
+.btnBig{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--accent);
+    color: var(--primary);
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition-property: width;
+    transition: transform 0.2s;
+}
+
+.btnBig:hover{
+    /* width: 300px; */
+    transform: scale(102%);
+}
+
+.btnNormal{
+    min-width: 130px;
+    padding: 10px;
+    background-color: var(--accent);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.gridItems{
+    width: 100%;
+    padding: 0px 50px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+
+.gridItems .note{
+    background-color: #f4f4f4;
+    padding: 10px;
+    height: 220px;
+    cursor: pointer;
+    border-radius: 10px;
+    
 }
