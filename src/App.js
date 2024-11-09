@@ -6,6 +6,7 @@ import Nopage from './pages/Nopage';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import Profile from './pages/Profile';
+import AddNote from './pages/AddNote';
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/profile' element={<Profile/>}/>
+        <Route path='/addnote' element={<AddNote/>}/>
       </Routes>
     </BrowserRouter>
     </>
