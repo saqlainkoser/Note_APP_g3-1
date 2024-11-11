@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagramSquare, FaYoutube} from "react-icons/fa";
 function Footer() {
   return (
     <>
-        <div className="footer flex h-[120px] absolute bottom-0 w-screen px-[50px] bg-[#f4f4f4] items-center justify-between">
+        <div className="footer flex h-[120px]  bottom-0 w-screen px-[50px] bg-[#f4f4f4] items-center justify-between">
             <h3 className="text-[26px]">Keep Notes</h3>
             <div className="text-center text-gray-500">
                 <p>Designed By <span className='text-[#E57F57]'>S.K.Ansari Sir</span></p>

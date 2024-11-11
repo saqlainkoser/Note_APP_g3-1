@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+// import logo from './logo.svgdsda';
 import './App.css';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Home from './pages/Home';
@@ -6,6 +6,7 @@ import Nopage from './pages/Nopage';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import Profile from './pages/Profile';
+import AddNote from './pages/AddNote';
 function App() {
   return (
     <>
@@ -16,6 +17,8 @@ function App() {
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/profile' element={<Profile/>}/>
+        <Route path='/addnote' element={<AddNote/>}/>
+        <Route path='/singlenotepage' element={<SingleNotePage/>}/>
       </Routes>
     </BrowserRouter>
     </>
