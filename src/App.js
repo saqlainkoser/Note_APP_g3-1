@@ -18,6 +18,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/profile' element={<Profile/>}/>
         <Route path='/addnote' element={<AddNote/>}/>
+        <Route path='/singlenotepage' element={<SingleNotePage/>}/>
       </Routes>
     </BrowserRouter>
     </>
